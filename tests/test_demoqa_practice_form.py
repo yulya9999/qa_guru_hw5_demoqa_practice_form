@@ -24,6 +24,7 @@ def test_demoqa_form():
     browser.element(
         ".subjects-auto-complete__indicators .subjects-auto-complete__clear-indicator"
     ).click()
+    browser.element("#subjectsInput").should(be.blank)
 
     browser.element("#subjectsInput").type("Eco").press_tab()
     # browser.element('.subjects-auto-complete__multi-value .subjects-auto-complete__multi-value__remove').click()
