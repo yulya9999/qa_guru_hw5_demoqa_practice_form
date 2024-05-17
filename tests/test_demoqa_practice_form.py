@@ -16,7 +16,7 @@ def test_demoqa_form():
     browser.element("#dateOfBirthInput").click()
     browser.element('.react-datepicker__month-select option[value="11"]').click()
     browser.element('.react-datepicker__year-select option[value="2000"]').click()
-    browser.element(".react-datepicker__day--028").click()
+    browser.all(".react-datepicker__day--028").second.click()
 
     # Проверка поля subjects
     browser.element("#subjectsInput").type("Social")
